@@ -1,0 +1,7 @@
+{
+  "name": "designpad",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

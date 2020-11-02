@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { LayoutContainersModule } from './containers/layout/layout.containers.module';
+import { IonicModule } from '@ionic/angular';
+import { HeadroomModule } from '@ctrl/ngx-headroom';
 
 @NgModule({
   imports: [
@@ -20,12 +22,12 @@ import { LayoutContainersModule } from './containers/layout/layout.containers.mo
     BrowserAnimationsModule,
     TranslateModule.forRoot(),
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    IonicModule.forRoot(),
+    HeadroomModule,
   ],
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
